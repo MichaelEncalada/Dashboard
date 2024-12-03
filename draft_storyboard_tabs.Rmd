@@ -1,0 +1,47 @@
+---
+title: "El Crimen en el Perú"
+#bibliography: testVisual.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+
+📱 **Análisis de Robos de Celulares (2022-2024)**  
+Tendencias clave para fortalecer estrategias de seguridad y tomar decisiones informadas. 🚨  
+
+🔑 **Hallazgos Clave**  
+- **Sexo**: Hombres y mujeres, igualmente vulnerables.  
+- **Edad**: Jóvenes (10-25 años), los más afectados.  
+- **Geografía**: Trujillo, Piura y Cusco destacan; regiones andinas y amazónicas con baja incidencia.  
+
+👨‍💻 **Autor:** Michael Encalada (Q-LAB)
+
+## Column {.tabset .tabset-fade}
+
+
+### La cuestión del género 
+
+```{r}
+readRDS("del1Draft.rds")
+```
+
+
+### ¿Influye la edad?
+
+```{r}
+readRDS("del2Draft.rds")
+```
+
+
+### ¿Dónde esta el crimen? 
+
+```{r}
+readRDS("del4Draft.rds")
+```
+
